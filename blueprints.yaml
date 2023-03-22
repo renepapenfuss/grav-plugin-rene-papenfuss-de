@@ -1,0 +1,36 @@
+name: Rene Papenfuss De
+slug: rene-papenfuss-de
+type: plugin
+version: 0.1.0
+description: This plugin adds the functionality used on rene-papenfuss.de.
+icon: plug
+author:
+  name: René Papenfuß
+  email: rene.papenfuss@live.de
+homepage: https://github.com/ren-papenfu/grav-plugin-rene-papenfuss-de
+demo: http://demo.yoursite.com
+keywords: grav, plugin, etc
+bugs: https://github.com/ren-papenfu/grav-plugin-rene-papenfuss-de/issues
+docs: https://github.com/ren-papenfu/grav-plugin-rene-papenfuss-de/blob/develop/README.md
+license: MIT
+
+dependencies:
+  - { name: grav, version: '>=1.6.0' }
+
+form:
+  validation: loose
+  fields:
+    enabled:
+      type: toggle
+      label: PLUGIN_ADMIN.PLUGIN_STATUS
+      highlight: 1
+      default: 0
+      options:
+        1: PLUGIN_ADMIN.ENABLED
+        0: PLUGIN_ADMIN.DISABLED
+      validate:
+        type: bool
+    text_var:
+      type: text
+      label: PLUGIN_RENE_PAPENFUSS_DE.TEXT_VARIABLE
+      help: PLUGIN_RENE_PAPENFUSS_DE.TEXT_VARIABLE_HELP

@@ -1,0 +1,29 @@
+{
+  "name": "ren-papenfu/rene-papenfuss-de",
+  "type": "grav-plugin",
+  "description": "This plugin adds the functionality used on rene-papenfuss.de.",
+  "keywords": ["plugin"],
+  "homepage": "https://github.com/ren-papenfu/grav-plugin-rene-papenfuss-de",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "René Papenfuß",
+      "email": "rene.papenfuss@live.de",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "Grav\\Plugin\\RenePapenfussDe\\": "classes/"
+    },
+    "classmap":  ["rene-papenfuss-de.php"]
+  },
+  "config": {
+    "platform": {
+      "php": "7.1.3"
+    }
+  }
+}
